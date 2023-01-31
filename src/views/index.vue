@@ -1,6 +1,6 @@
 <template>
   <div class="user">
-    <div>当前数量：{{ count }}</div>
+    <div class="count">当前数量：{{ count }}</div>
     <el-button type="primary" @click="addCount">新增</el-button>
     <el-button type="success" @click="reduceCount">减少</el-button>
     <!-- <router-link to='home'>首页</router-link>
@@ -37,8 +37,11 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .user {
   border: 1px solid red;
+  .count {
+    color: green;
+  }
 }
 </style>
